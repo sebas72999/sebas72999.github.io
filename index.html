@@ -5,34 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yo te llevo</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        h1 { color: #333; }
-        .description, .downloads, .qr-code { margin-bottom: 30px; }
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 20px; 
+            background-color: #f4f4f9; 
+            color: #333; 
+        }
+        h1, h2 { 
+            color: #4CAF50; 
+        }
+        .container { 
+            max-width: 800px; 
+            margin: auto; 
+            padding: 20px; 
+            background-color: #fff; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+            border-radius: 10px; 
+        }
+        .description, .downloads, .qr-code { 
+            margin-bottom: 30px; 
+        }
+        .downloads ul { 
+            list-style-type: none; 
+            padding: 0; 
+        }
+        .downloads li { 
+            margin-bottom: 10px; 
+        }
+        .downloads a { 
+            text-decoration: none; 
+            color: #4CAF50; 
+        }
+        .downloads a:hover { 
+            text-decoration: underline; 
+        }
+        .qr-code img { 
+            max-width: 100%; 
+            height: auto; 
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border-radius: 0 0 10px 10px;
+        }
     </style>
 </head>
 <body>
-    <h1>Yo te llevo</h1>
-    <p>Bienvenidos a la página oficial de "Yo te llevo", una aplicación diseñada específicamente para estudiantes.</p>
+    <div class="container">
+        <h1>Yo te llevo</h1>
+        <p>Bienvenidos a la página oficial de "Yo te llevo", una aplicación diseñada específicamente para estudiantes.</p>
 
-    <!-- Descripción de la App -->
-    <div class="description">
-        <h2>¿Qué es "Yo te llevo"?</h2>
-        <p>"Yo te llevo" es una aplicación similar a Uber, pero enfocada en estudiantes. Los estudiantes pueden crear y compartir viajes hacia diferentes destinos en Santiago, para no viajar solos. Esta plataforma permite a los estudiantes con auto compartir sus asientos con otros estudiantes que viven en la misma área, promoviendo así una comunidad más segura y colaborativa.</p>
-    </div>
+        <!-- Descripción de la App -->
+        <div class="description">
+            <h2>¿Qué es "Yo te llevo"?</h2>
+            <p>"Yo te llevo" es una aplicación similar a Uber, pero enfocada en estudiantes. Los estudiantes pueden crear y compartir viajes hacia diferentes destinos en Santiago, para no viajar solos. Esta plataforma permite a los estudiantes con auto compartir sus asientos con otros estudiantes que viven en la misma área, promoviendo así una comunidad más segura y colaborativa.</p>
+        </div>
 
-    <!-- Links de Descarga -->
-    <div class="downloads">
-        <h2>Descargar la App</h2>
-        <ul>
-            <li><a href="link_a_tu_app_para_android" target="_blank">Descargar para Android</a></li>
-            <li><a href="link_a_tu_app_para_ios" target="_blank">Descargar para iOS</a></li>
-        </ul>
-    </div>
+        <!-- Links de Descarga -->
+        <div class="downloads">
+            <h2>Descargar la App</h2>
+            <ul>
+                <li><a href="link_a_tu_app_para_android" target="_blank">Descargar para Android</a></li>
+                <li><a href="link_a_tu_app_para_ios" target="_blank">Descargar para iOS</a></li>
+            </ul>
+        </div>
 
-    <!-- Código QR -->
-    <div class="qr-code">
-        <h2>Descarga Directa</h2>
-        <img src="ruta_al_codigo_qr.png" alt="Código QR para descargar la app">
+        <!-- Código QR -->
+        <div class="qr-code">
+            <h2>Descarga Directa</h2>
+            <img src="ruta_al_codigo_qr.png" alt="Código QR para descargar la app">
+        </div>
     </div>
+    <footer>
+        © 2024 Yo te llevo. Todos los derechos reservados.
+    </footer>
 </body>
 </html>
